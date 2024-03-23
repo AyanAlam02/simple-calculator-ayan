@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import inquirer from "inquirer";
+console.log("Welcome, It Is A Simple Calculator.");
 const answer = await inquirer.prompt([
     { message: "Enter First Number", type: "number", name: "firstNumber" },
     { message: "Enter Second Number", type: "number", name: "secondNumber" },
@@ -38,4 +39,4 @@ else if (answer.operator === "Exponential") {
 else {
     console.log("Please, Select Valid Operator.");
 }
-console.log("Made By Ayan Alam");
+console.log("\n\nMade By Ayan Alam");
